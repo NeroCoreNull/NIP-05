@@ -7,16 +7,16 @@
 
 body {
     font-family: 'Fira Code', 'Consolas', monospace;
-    background-color: #121212; /* Dark background for the theme */
-    color: #fff;
+    background-color: #0d0d0d; /* Darker black background */
+    color: #ddd; /* Lighter text for better readability */
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
 }
 
 header {
-    background: linear-gradient(to right, #6a3093, #a044ff); /* Subtle gradient for visual interest */
-    color: #fff;
+    background: linear-gradient(to right, #003300, #009933); /* Green gradient */
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
@@ -29,38 +29,38 @@ main {
     max-width: 960px;
     margin: 40px auto;
     padding: 20px;
-    background: #1e1e1e; /* Slightly lighter dark shade for content separation */
+    background: #111111; /* Slightly lighter black for content separation */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
 }
 
 section {
-    margin-bottom: 30px; /* Increased margin for better section separation */
+    margin-bottom: 30px;
     padding: 20px;
-    border-left: 5px solid #33ff33; /* Vibrant line marker for sections */
+    border-left: 5px solid #33cc33; /* Brighter green for section marker */
 }
 
 h2 {
-    color: #33ff33; /* Hacker green for headings */
+    color: #33cc33; /* Bright green for headings */
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2em; /* Larger text for better readability */
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
 canvas {
-    margin-top: 20px; /* Space above charts for visual separation */
+    margin-top: 20px;
     width: 100%;
-    max-width: 600px; /* Limit chart size for better display */
+    max-width: 600px;
     height: auto;
 }
 
 .external-link a {
     display: inline-block;
-    background: #ff4500; /* Vibrant orange-red */
+    background: #cc0000; /* Red for urgency and action */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -70,7 +70,7 @@ canvas {
 }
 
 .external-link a:hover {
-    background: #cc3700; /* Darker shade for hover state */
+    background: #990000; /* Darker red on hover */
 }
 
 footer {
@@ -78,16 +78,16 @@ footer {
     color: #777;
     padding: 10px 0;
     font-size: 0.9em;
-    margin-top: 40px; /* Increased spacing before the footer */
+    margin-top: 40px;
 }
 
-/* Responsive Design for better handling on smaller devices */
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1, .external-link a {
         font-size: 1.8em;
     }
     p {
-        font-size: 1em; /* Smaller font size on mobile for readability */
+        font-size: 1em;
     }
 }
 
