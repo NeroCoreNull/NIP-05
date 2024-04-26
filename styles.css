@@ -5,12 +5,36 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Header styles */
-header {
+/* Header and Landing Page styles */
+header, .landing {
     text-align: center;
     padding: 20px;
+}
+
+.landing h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.landing p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: limegreen;
+    border: none;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
 
 /* Main section styling */
@@ -21,7 +45,6 @@ main {
 /* Link styles */
 a {
     color: limegreen;
-    text-decoration: none;
 }
 
 a:hover {
@@ -31,12 +54,8 @@ a:hover {
 /* Section specific styling */
 section {
     margin-bottom: 20px;
-}
-
-/* Privacy and free speech sections */
-#privacy, #free-speech {
-    padding: 15px;
     border-left: 3px solid grey;
+    padding-left: 15px;
 }
 
 /* Footer styles */
@@ -48,7 +67,7 @@ footer {
 
 /* Styles for the hidden link */
 #hidden-link {
-    opacity: 0; /* Invisible but still part of the layout and clickable */
+    opacity: 0;
     position: absolute;
-    bottom: 10px; /* Positioned at the bottom or any specific place you want */
+    bottom: 10px;
 }
