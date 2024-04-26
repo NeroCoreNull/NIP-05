@@ -98,4 +98,58 @@ footer p {
     font-size: 1rem;
 }
 
-/* Additional styling can be implemented for responsive design and other effects */
+/* For tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for header on tablets */
+    }
+
+    main h2 {
+        font-size: 1.5rem; /* Smaller font size for section headings on tablets */
+    }
+
+    main p {
+        font-size: 1rem; /* Smaller font size for paragraphs on tablets */
+    }
+
+    #secret-code {
+        width: 150px; /* Smaller width for secret code input on tablets */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Smaller font size for footer on tablets */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0; /* Less padding in the header on mobiles */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for header on mobiles */
+    }
+
+    main {
+        padding: 10px; /* Less padding in the main content area on mobiles */
+    }
+
+    main h2 {
+        font-size: 1.3rem; /* Smaller font size for section headings on mobiles */
+    }
+
+    main p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs on mobiles */
+    }
+
+    #secret-code {
+        width: 100%; /* Full width for secret code input on mobiles */
+        max-width: 200px; /* But limiting to 200px maximum */
+        margin: 10px auto; /* Centering the input field on mobiles */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Smaller font size for footer on mobiles */
+    }
+}
