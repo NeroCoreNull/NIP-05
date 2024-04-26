@@ -18,7 +18,7 @@ header {
     background-size: cover;
     padding: 40px 0;
     text-align: center;
-    min-height: 200px; /* Add a minimum height */
+    min-height: 600px; /* Add a minimum height */
 }
 
 header h1 {
