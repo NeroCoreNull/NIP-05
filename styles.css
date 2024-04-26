@@ -6,22 +6,35 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Header and Landing Page styles */
 header, .landing {
     text-align: center;
     padding: 20px;
+    width: 100%;
+}
+
+.landing {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('your-image-url.jpg') no-repeat center center/cover; /* Replace with your image URL */
 }
 
 .landing h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
+    color: white;
 }
 
 .landing p {
     font-size: 1.2em;
     margin-bottom: 1em;
+    color: white;
 }
 
 button {
@@ -70,4 +83,19 @@ footer {
     opacity: 0;
     position: absolute;
     bottom: 10px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+    .landing h1 {
+        font-size: 1.5em;
+    }
+
+    .landing p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
 }
