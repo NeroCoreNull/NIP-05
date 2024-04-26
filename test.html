@@ -3,68 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Title</title>
+    <title>Engage in Freedom</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="fullscreen-background"></div>
+
     <header>
-        <!-- Optional place for a subtle logo or icon, including the V for Vendetta motif -->
+        <h1>Discover Privacy and Freedom</h1>
     </header>
-    
-    <div class="landing">
-        <h1>Welcome!</h1>
-        <p>This is your gateway to understanding the essentials of privacy and free speech.</p>
-        <button onclick="scrollToContent()">Explore</button>
-    </div>
 
     <main>
-        <section id="intro">
+        <section id="intro" class="content-section">
+            <h2>Connect With Me</h2>
             <p>Find me on Nostr: <a href="your-nostr-link">@yourprofile</a></p>
             <p>Email me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
         </section>
-        
-        <section id="privacy">
+
+        <section id="privacy" class="content-section">
             <h2>Privacy Facts</h2>
             <ul>
                 <li>Privacy Fact 1</li>
                 <li>Privacy Fact 2</li>
             </ul>
         </section>
-        
-        <section id="free-speech">
+
+        <section id="free-speech" class="content-section">
             <h2>Free Speech Facts</h2>
             <ul>
                 <li>Free Speech Fact 1</li>
                 <li>Free Speech Fact 2</li>
             </ul>
         </section>
-        
-        <section id="snowden-files">
+
+        <section id="snowden-files" class="content-section">
             <h2>Edward Snowden File List</h2>
             <a href="link-to-files">Access the Files</a>
         </section>
     </main>
-    
+
     <footer>
-        <p>Click here to reveal a special link</p>
+        <p>Secret Area - Click to Reveal</p>
     </footer>
 
     <div id="hidden-link" style="opacity: 0; position: absolute; bottom: 10px;">
         <a href="your-future-link">Special Link</a>
     </div>
 
-    <script>
-        document.querySelector('footer').addEventListener('click', function() {
-            var hiddenLink = document.getElementById('hidden-link');
-            hiddenLink.style.opacity = '1'; // This makes the link visible
-        });
-
-        function scrollToContent() {
-            window.scrollTo({
-                top: document.querySelector('main').offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
