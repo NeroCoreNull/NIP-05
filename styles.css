@@ -18,7 +18,7 @@ header {
     background-size: contain;
     text-align: center;
     height: 50vh; /* 50% of the viewport height */
-    padding: 100px 0;
+    
 }
 
 header h1 {
