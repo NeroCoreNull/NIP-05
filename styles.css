@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: url('path_to_your_banner_image.jpg') no-repeat center center; 
+    background: url('/imgs/NeroSpaceBanner.jpg') no-repeat center center; 
     background-size: cover;
     padding: 40px 0;
     text-align: center;
