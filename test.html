@@ -5,54 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NullCore.Tech</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <h1>NullCore.Tech</h1>
     </header>
     <main>
-        <section id="privacy">
-            <h2>Privacy Facts</h2>
-            <button onclick="toggleVisibility('privacyFacts')">Toggle Facts</button>
-            <ul id="privacyFacts">
-                <li>Privacy is your right to control your personal information and how it's used.</li>
-                <li>Over 80% of Americans feel they have little or no control over the data collected on them by companies.</li>
-                <li>Privacy laws vary significantly around the world, affecting how data is handled across borders.</li>
-            </ul>
+        <section id="stats">
+            <h2>Website Traffic Statistics</h2>
+            <canvas id="trafficChart"></canvas>
         </section>
-        <section id="free-speech">
-            <h2>Free Speech Facts</h2>
-            <button onclick="toggleVisibility('freeSpeechFacts')">Toggle Facts</button>
-            <ul id="freeSpeechFacts">
-                <li>Free speech is considered a fundamental human right as per Universal Declaration of Human Rights.</li>
-                <li>In many countries, the right to free speech is not absolute and comes with responsibilities.</li>
-                <li>Digital platforms have become the new battlegrounds for free speech debates.</li>
-            </ul>
-        </section>
-        <section id="cybersecurity">
-            <h2>Cybersecurity Facts</h2>
-            <button onclick="toggleVisibility('cybersecurityFacts')">Toggle Facts</button>
-            <ul id="cybersecurityFacts">
-                <li>Cybersecurity measures are crucial for protecting data from unauthorized access and cyber threats.</li>
-                <li>The cost of cybercrime to companies worldwide is estimated to reach $10.5 trillion annually by 2025.</li>
-                <li>Human error is the leading cause of cybersecurity breaches.</li>
-            </ul>
-        </section>
-        <section id="ethics">
-            <h2>Data Ethics Facts</h2>
-            <button onclick="toggleVisibility('ethicsFacts')">Toggle Facts</button>
-            <ul id="ethicsFacts">
-                <li>Data ethics covers fair and responsible use of data, considering the rights and privacy of individuals.</li>
-                <li>Transparency in how organizations collect and use data is crucial for ethical data practices.</li>
-                <li>Ethical data usage requires regular audits and compliance checks to ensure adherence to laws and policies.</li>
-            </ul>
-        </section>
-        <div class="external-link">
-            <a href="https://example.com/edward-snowden-file-list" target="_blank">Edward Snowden File List</a>
-        </div>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> NullCore.Tech - All rights reserved.</p>
+        <p>&copy; 2024 NullCore.Tech - All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
