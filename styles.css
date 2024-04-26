@@ -6,14 +6,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Header and Landing Page styles */
-header, .landing {
+header {
     text-align: center;
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
 }
 
 .landing {
@@ -23,27 +22,33 @@ header, .landing {
     justify-content: center;
     align-items: center;
     background: url('your-image-url.jpg') no-repeat center center/cover; /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .landing h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
-    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Shadow for better readability */
 }
 
 .landing p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 1em;
-    color: white;
+    max-width: 600px; /* Limiting width for better text management */
+    text-align: center;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: limegreen;
     border: none;
     color: black;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for button hover */
+    border-radius: 5px; /* Rounded corners for the button */
 }
 
 button:hover {
@@ -52,30 +57,33 @@ button:hover {
 
 /* Main section styling */
 main {
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Link styles */
 a {
     color: limegreen;
+    transition: color 0.3s ease; /* Smooth color transition for links */
 }
 
 a:hover {
     text-decoration: underline;
+    color: #FFFF00; /* Brighter color on hover for better visibility */
 }
 
 /* Section specific styling */
 section {
-    margin-bottom: 20px;
-    border-left: 3px solid grey;
-    padding-left: 15px;
+    margin-bottom: 40px;
+    border-left: 5px solid gray;
+    padding-left: 20px;
 }
 
 /* Footer styles */
 footer {
     text-align: center;
-    padding: 10px;
-    opacity: 0.6;
+    padding: 20px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.8); /* Slight transparency */
 }
 
 /* Styles for the hidden link */
@@ -88,14 +96,18 @@ footer {
 /* Responsive design for mobile devices */
 @media (max-width: 600px) {
     .landing h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .landing p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     button {
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px;
     }
 }
