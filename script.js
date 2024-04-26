@@ -1,9 +1,8 @@
-// Example: Toggle FAQ Answers
 document.addEventListener('DOMContentLoaded', function () {
-    const faqs = document.querySelectorAll('#faq-list div');
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    faqs.forEach(faq => {
-        faq.addEventListener('click', function () {
+    faqItems.forEach(item => {
+        item.addEventListener('click', function () {
             this.classList.toggle('active');
         });
     });
