@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
-        <!-- Possible place for a subtle logo or icon -->
+        <!-- Optional place for a subtle logo or icon, including the V for Vendetta motif -->
     </header>
     
+    <div class="landing">
+        <h1>Welcome!</h1>
+        <p>This is your gateway to understanding the essentials of privacy and free speech.</p>
+        <button onclick="scrollToContent()">Explore</button>
+    </div>
+
     <main>
         <section id="intro">
-            <p>Welcome to my website!</p>
-            <p>Find me on Nostr: <a href="your-nostr-link" style="color: limegreen;">@yourprofile</a></p>
+            <p>Find me on Nostr: <a href="your-nostr-link">@yourprofile</a></p>
             <p>Email me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
         </section>
         
@@ -23,7 +28,6 @@
             <ul>
                 <li>Privacy Fact 1</li>
                 <li>Privacy Fact 2</li>
-                <!-- More facts can be added here -->
             </ul>
         </section>
         
@@ -32,25 +36,35 @@
             <ul>
                 <li>Free Speech Fact 1</li>
                 <li>Free Speech Fact 2</li>
-                <!-- More facts can be added here -->
             </ul>
         </section>
         
         <section id="snowden-files">
             <h2>Edward Snowden File List</h2>
-            <a href="link-to-files" style="color: limegreen;">Access the Files</a>
+            <a href="link-to-files">Access the Files</a>
         </section>
     </main>
     
     <footer>
-        <p>Footer content here</p>
+        <p>Click here to reveal a special link</p>
     </footer>
 
-    <!-- Hidden link, not immediately visible or usable -->
-    <div id="hidden-link" style="display: none;">
+    <div id="hidden-link" style="opacity: 0; position: absolute; bottom: 10px;">
         <a href="your-future-link">Special Link</a>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.querySelector('footer').addEventListener('click', function() {
+            var hiddenLink = document.getElementById('hidden-link');
+            hiddenLink.style.opacity = '1'; // This makes the link visible
+        });
+
+        function scrollToContent() {
+            window.scrollTo({
+                top: document.querySelector('main').offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
