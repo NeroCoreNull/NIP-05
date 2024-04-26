@@ -1,66 +1,62 @@
-body, html {
+body {
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    background-color: #000;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
 }
 
-.hero {
-    background: url('hero-background.jpg') no-repeat center center/cover; /* Replace with a striking image */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-content {
+nav {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for better readability */
+    padding: 10px 0;
 }
 
-.hero-content h1 {
-    font-size: 3em;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.hero-content p {
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.cta-button {
-    background-color: limegreen;
-    color: black;
-    padding: 10px 20px;
+nav ul li a {
+    color: limegreen;
     text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: darkgreen;
+header {
+    background: #444;
+    padding: 20px;
+    text-align: center;
 }
 
-#main-content {
+main {
     padding: 20px;
 }
 
 section {
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: #333;
 }
 
 #hidden-link {
-    opacity: 0;
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
     text-align: center;
+    transition: opacity 2s ease-in-out;
 }
