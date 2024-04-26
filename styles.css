@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fira Code', 'Consolas', monospace;
-    background-color: #121212;
+    background-color: #121212; /* Dark background for the theme */
     color: #fff;
     line-height: 1.6;
     font-size: 16px;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #6a3093, #a044ff);
+    background: linear-gradient(to right, #6a3093, #a044ff); /* Subtle gradient for visual interest */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -29,44 +29,48 @@ main {
     max-width: 960px;
     margin: 40px auto;
     padding: 20px;
-    background: #1e1e1e;
+    background: #1e1e1e; /* Slightly lighter dark shade for content separation */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+section {
+    margin-bottom: 30px; /* Increased margin for better section separation */
+    padding: 20px;
+    border-left: 5px solid #33ff33; /* Vibrant line marker for sections */
+}
+
 h2 {
-    color: #33ff33; /* Hacker Green */
+    color: #33ff33; /* Hacker green for headings */
     font-size: 1.8em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+p {
+    font-size: 1.2em; /* Larger text for better readability */
+    margin-bottom: 10px;
 }
 
-li {
-    padding: 12px;
-    border-bottom: 1px solid #333;
-}
-
-li:last-child {
-    border-bottom: none;
+canvas {
+    margin-top: 20px; /* Space above charts for visual separation */
+    width: 100%;
+    max-width: 600px; /* Limit chart size for better display */
+    height: auto;
 }
 
 .external-link a {
     display: inline-block;
-    background: #ff4500; /* Vibrant Orange-Red */
+    background: #ff4500; /* Vibrant orange-red */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s;
     font-weight: bold;
+    transition: background 0.3s;
 }
 
 .external-link a:hover {
-    background: #cc3700;
+    background: #cc3700; /* Darker shade for hover state */
 }
 
 footer {
@@ -74,19 +78,24 @@ footer {
     color: #777;
     padding: 10px 0;
     font-size: 0.9em;
-    margin-top: 20px;
+    margin-top: 40px; /* Increased spacing before the footer */
 }
 
-/* Responsive Design */
+/* Responsive Design for better handling on smaller devices */
 @media (max-width: 768px) {
-    header h1, button, .external-link a {
+    header h1, .external-link a {
         font-size: 1.8em;
-        padding: 8px 16px;
+    }
+    p {
+        font-size: 1em; /* Smaller font size on mobile for readability */
     }
 }
 
 @media (max-width: 480px) {
     header, main, footer {
+        padding: 10px;
+    }
+    section {
         padding: 10px;
     }
 }
