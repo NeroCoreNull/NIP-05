@@ -1,40 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var ctx1 = document.getElementById('privacyConcernsChart').getContext('2d');
-    var privacyConcernsChart = new Chart(ctx1, {
-        type: 'doughnut',
-        data: {
-            labels: ['Concerned', 'Not Concerned'],
-            datasets: [{
-                data: [92, 8],
-                backgroundColor: ['#33ff33', '#ff4500'],
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-                text: 'Concerns about Online Privacy'
-            }
-        }
-    });
+// script.js
 
-    var ctx2 = document.getElementById('consumerBehaviorChart').getContext('2d');
-    var consumerBehaviorChart = new Chart(ctx2, {
-        type: 'bar',
-        data: {
-            labels: ['Stopped Shopping', 'Would Spend More'],
-            datasets: [{
-                label: 'Percentage of Consumers',
-                data: [48, 60],
-                backgroundColor: ['#ff4500', '#33ff33'],
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100
-                }
-            }
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to check the secret code
+    function checkSecretCode() {
+        const input = document.getElementById('secret-code');
+        const secretContent = document.getElementById('hidden-content');
+
+        if (input.value.toLowerCase() === 'nostr') {
+            secretContent.style.display = 'block';
+            secretContent.textContent = 'Core = Null';
+            input.value = ''; // Clear the input field after successful entry
+        } else {
+            alert('Incorrect code. Try again.');
+            input.value = ''; // Clear the input field after incorrect entry
+        }
+    }
+
+    // Event listener for the secret code input
+    document.getElementById('secret-code').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            checkSecretCode();
         }
     });
 });
