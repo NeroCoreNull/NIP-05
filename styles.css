@@ -1,4 +1,6 @@
-/* Basic Reset */
+/* styles.css */
+
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,125 +8,94 @@
 }
 
 body {
-    font-family: 'Fira Code', 'Consolas', monospace;
-    background-color: #0d0d0d; /* Darker black background */
-    color: #ddd; /* Lighter text for better readability */
-    line-height: 1.6;
-    font-size: 16px;
-    padding: 20px;
-}
-
-main section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-h2 {
-    margin-bottom: 20px; /* Spacing for the header */
-    font-size: 2.5em; /* Larger font for emphasis */
-    color: #33cc33;
-}
-
-p {
-    width: 80%; /* Limit paragraph width for readability */
-    margin: 20px 0; /* Spacing around paragraphs */
-    font-size: 1.2em;
-    opacity: 0; /* Start invisible for transition */
-    transition: opacity 2s ease-in-out; /* Smooth transition for text */
-}
-
-.external-link a {
-    margin-top: 40px; /* Space from the last element */
+    background-color: #0a0a0a; /* Deep space black */
+    color: #ffffff; /* Ethereal white for text */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for the space vibe */
 }
 
 header {
-    background: linear-gradient(to right, #003300, #009933);
-    color: #ffffff;
+    background: url('path_to_your_banner_image.jpg') no-repeat center center; 
+    background-size: cover;
+    padding: 40px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 2.4em;
+    font-size: 2.5rem;
+    color: #7f00ff; /* Vibrant purple to match the cosmic theme */
 }
 
 main {
-    max-width: 960px;
-    margin: 40px auto;
     padding: 20px;
-    background: #111111; /* Slightly lighter black for content separation */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
 }
 
 section {
-    margin-bottom: 30px;
-    padding: 20px;
-    border-left: 5px solid #33cc33; /* Brighter green for section marker */
+    margin-bottom: 40px;
 }
 
 h2 {
-    color: #33cc33; /* Bright green for headings */
-    font-size: 1.8em;
+    font-size: 2rem;
+    color: #00ff00; /* Lime green for section headings */
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00ff00; /* Links in lime green to stand out against the dark backdrop */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#hidden label {
+    display: block;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
-canvas {
+#secret-code {
+    background-color: #1c1c1c; /* Dark input field for contrast */
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 200px;
+    transition: border-color 0.3s;
+}
+
+#secret-code:focus {
+    outline: none;
+    border-color: #7f00ff; /* Purple border on focus */
+}
+
+#hidden-content {
+    color: #7f00ff; /* Hidden content text color */
+    font-size: 1.5rem;
     margin-top: 20px;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
-.external-link a {
-    display: inline-block;
-    background: #cc0000; /* Red for urgency and action */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.external-link a:hover {
-    background: #990000; /* Darker red on hover */
+    display: none; /* Start off hidden */
 }
 
 footer {
+    background-color: #121212; /* Slightly lighter black for the footer */
+    color: #ffffff;
     text-align: center;
-    color: #777;
     padding: 10px 0;
-    font-size: 0.9em;
-    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1, .external-link a {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 1em;
-    }
+footer p {
+    font-size: 1rem;
 }
 
-@media (max-width: 480px) {
-    header, main, footer {
-        padding: 10px;
-    }
-    section {
-        padding: 10px;
-    }
-}
+/* Additional styling can be implemented for responsive design and other effects */
