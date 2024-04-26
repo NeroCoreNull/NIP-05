@@ -1,33 +1,38 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var ctx = document.getElementById('trafficChart').getContext('2d');
-    var trafficChart = new Chart(ctx, {
+    var ctx1 = document.getElementById('privacyConcernsChart').getContext('2d');
+    var privacyConcernsChart = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            labels: ['Concerned', 'Not Concerned'],
+            datasets: [{
+                data: [92, 8],
+                backgroundColor: ['#33ff33', '#ff4500'],
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Concerns about Online Privacy'
+            }
+        }
+    });
+
+    var ctx2 = document.getElementById('consumerBehaviorChart').getContext('2d');
+    var consumerBehaviorChart = new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['January', 'February', 'March', 'April', 'May'],
+            labels: ['Stopped Shopping', 'Would Spend More'],
             datasets: [{
-                label: 'Visits',
-                data: [1200, 1900, 800, 1600, 2000],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
-                ],
-                borderWidth: 1
+                label: 'Percentage of Consumers',
+                data: [48, 60],
+                backgroundColor: ['#ff4500', '#33ff33'],
             }]
         },
         options: {
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    max: 100
                 }
             }
         }
