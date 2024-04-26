@@ -35,7 +35,7 @@ main {
 }
 
 h2 {
-    color: #ff6347; /* Tomato */
+    color: #33ff33; /* Hacker Green */
     font-size: 1.8em;
     margin-bottom: 15px;
 }
@@ -54,24 +54,9 @@ li:last-child {
     border-bottom: none;
 }
 
-button {
-    background: #ff4500; /* Orange-Red */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #ff6347; /* Tomato */
-}
-
 .external-link a {
     display: inline-block;
-    background: #32cd32; /* Lime Green */
+    background: #ff4500; /* Vibrant Orange-Red */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -81,7 +66,7 @@ button:hover {
 }
 
 .external-link a:hover {
-    background: #228b22; /* Forest Green */
+    background: #cc3700;
 }
 
 footer {
@@ -94,11 +79,8 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
+    header h1, button, .external-link a {
         font-size: 1.8em;
-    }
-
-    button, .external-link a {
         padding: 8px 16px;
     }
 }
