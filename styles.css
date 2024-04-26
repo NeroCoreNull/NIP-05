@@ -37,3 +37,17 @@ footer {
     padding: 20px;
     background-color: #1c1c1c;
 }
+
+#references ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#references li {
+    margin-bottom: 10px;
+}
+
+#references a {
+    color: #4caf50; /* Bright accent color */
+}
+
