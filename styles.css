@@ -16,9 +16,8 @@ body {
 header {
     background: url('https://image.nostr.build/59b7787ba434defe942bb190605addb7473eb519d9343ed248b20f95e63ea6fb.jpg') no-repeat center center;
     background-size: cover;
-    padding: 40px 0;
     text-align: center;
-    min-height: 600px; /* Add a minimum height */
+    height: 50vh; /* 50% of the viewport height */
 }
 
 header h1 {
