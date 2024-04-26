@@ -1,41 +1,54 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    overflow-x: hidden;
+    background-color: #000;
 }
 
-.fullscreen-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover; /* Replace with a striking image */
     height: 100vh;
-    background: url('background-image.jpg') no-repeat center center/cover; /* Replace with your background image */
-    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header {
+.hero-content {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for better readability */
 }
 
-.content-section {
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: limegreen;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: darkgreen;
+}
+
+#main-content {
     padding: 20px;
-    border-left: 4px solid limegreen;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.1);
 }
 
-a {
-    color: limegreen;
-}
-
-a:hover {
-    color: yellow;
+section {
+    margin-top: 20px;
 }
 
 footer {
@@ -46,13 +59,8 @@ footer {
 
 #hidden-link {
     opacity: 0;
-    position: absolute;
+    position: fixed;
     bottom: 10px;
-}
-
-@media (max-width: 600px) {
-    .content-section {
-        margin: 10px;
-        padding: 10px;
-    }
+    width: 100%;
+    text-align: center;
 }
