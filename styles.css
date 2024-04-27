@@ -19,8 +19,8 @@ body, html {
 }
 
 body {
-    background-color: #0a0a0a; /* Deep space black */
-    color: #ffffff; /* Ethereal white for text */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Cosmic gradient background */
+    color: #fff;
     font-family: 'Orbitron', sans-serif; /* Futuristic font for the space vibe */
     margin: 0;
     padding-bottom: 60px; /* Add padding equal to or greater than the height of the footer */
@@ -35,8 +35,12 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #7f00ff; /* Vibrant purple to match the cosmic theme */
+    font-size: 3rem;
+    color: transparent;
+    background: linear-gradient(45deg, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 main {
@@ -60,12 +64,13 @@ p {
 }
 
 a {
-    color: #00ff00; /* Links in lime green to stand out against the dark backdrop */
+    color: #7f00ff; /* Vibrant purple link color */
+    transition: color 0.3s;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #e100ff; /* Brighter purple on hover */
 }
 
 #hidden label {
@@ -99,7 +104,7 @@ a:hover {
 }
 
 footer {
-    background-color: #121212; /* Slightly lighter black for the footer */
+    background-color: #302b63;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -164,5 +169,19 @@ footer p {
 
     footer p {
         font-size: 0.8rem; /* Smaller font size for footer on mobiles */
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 60vh; /* Increase the height on larger screens */
+        background-size: cover; /* Cover ensures the image fills the header */
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 50vh; /* Smaller height on mobile devices */
+        background-size: contain; /* Contain makes sure the entire image is visible */
     }
 }
