@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the full height is available */
+}
+
 body {
     background-color: #0a0a0a; /* Deep space black */
     color: #ffffff; /* Ethereal white for text */
@@ -17,8 +23,8 @@ header {
     background: url('https://image.nostr.build/59b7787ba434defe942bb190605addb7473eb519d9343ed248b20f95e63ea6fb.jpg') no-repeat center center;
     background-size: contain;
     text-align: center;
-    height: 50vh; /* 50% of the viewport height */
-    
+    height: 50vh; /* Adjust this to control how much of the viewport the image takes up */
+    margin: 0;
 }
 
 header h1 {
