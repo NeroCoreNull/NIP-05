@@ -1,0 +1,1 @@
+{"tag":"payRequest","callback":"https://vipsats.app/satoshi/?ac=17&addr=nero","minSendable":10000,"maxSendable":100000000,"metadata":"[[\"text/plain\",\"vipsats\"],[\"text/identifier\",\"nero@vipsats.app\"]]"}
